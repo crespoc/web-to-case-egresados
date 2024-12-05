@@ -1,0 +1,73 @@
+/* Estilo general del formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los campos de entrada y áreas de texto */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+/* Estilo de las etiquetas */
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Estilo del botón de enviar */
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Espaciado entre campos */
+form br {
+    display: none;
+}
+
+/* Ajuste para áreas de texto */
+form textarea {
+    resize: vertical;
+}
+
+/* Estilo responsivo */
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+
+    form input[type="submit"] {
+        font-size: 14px;
+    }
+}
